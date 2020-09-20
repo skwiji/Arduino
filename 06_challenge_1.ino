@@ -1,5 +1,5 @@
 #define PIN_LED 7
-unsigned int count;
+
 int period;
 int on_time;
 int off_time;
@@ -30,21 +30,16 @@ void setup() {
 
   period=100;
 
- Serial.begin(115200);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
-  }
-
 // period 설정 10000, 1000, 100 중 사용할 코드 사용하고 나머지는 주석처리, 시작 밝기 단계 0
-/*  set_period(10000);
+  set_period(10000);
   set_duty(0);
-
+/*
   set_period(1000);
   set_duty(0);
-*/
+
   set_period(100);
   set_duty(0);
-
+*/
 
 }
 
